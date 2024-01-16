@@ -23,9 +23,10 @@ def format_introduction(user_info):
 
     Returns:
         tuple: A tuple containing two different introduction strings.
+    
     """
     # Using the string % format method
-    intro1 = "My name is %s, I am %s years old and I live in %s." % (user_info['name'], user_info['age'], user_info['city'])
+    intro1 = "Hello! My name is %s, I am %s years old and I live in %s." % (user_info['name'], user_info['age'], user_info['city'])
 
     # Using an f-string (only for Python 3.6+)
     intro2 = f"Hi! I'm {user_info['name']}, a {user_info['age']}-year-old living in {user_info['city']}."
